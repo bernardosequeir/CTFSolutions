@@ -1,17 +1,17 @@
 # CTFfiles
 
-##Completed: 
+## Completed: 
 
 Leviathan
 
-##In Progress:
+## In Progress:
 
-Natas 
+1. Natas 
 
-PicoCtf2018
+2. PicoCtf2018
 
-Flare-On (if still active) 
+3. Flare-On (if still active) 
 
-##Incomplete:
+## Incomplete:
 
-PicoCtf2017
+1. PicoCtf2017
