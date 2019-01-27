@@ -127,6 +127,8 @@ PS C:\Users\century6\documents> echo ( ls ..\Desktop | Measure-Object).Count
 
 ### Century 7 Solution
 
+The flag for this level is the content of a file hidden inside the user's folders. All we know is that the flag is inside a readme so, if we search for a command that works similar to grep we find that ***Get-ChildItem*** (aliased as ls in the example below) is capable of doing just that. All we have to do is cd into the parent folder of the user and search for a file that *includes* read and do it *recursively*, so that it searches every folder available.
+
 ```powershell
 PS C:\Users\century7\documents> cd ..
 PS C:\Users\century7> ls -Include *read* -Recurse
@@ -138,9 +140,61 @@ PS C:\Users\century7> ls -Include *read* -Recurse
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
 -a----        8/30/2018   3:29 AM              7 Readme
+```
 
+Now that we know where the file is, we just nead to cat (***Get-Content*** alias) it out
 
+```powershell
 PS C:\Users\century7> cat .\Downloads\Readme
 7points
 ``` 
 So the flag is just 7points.
+
+
+### Century 8 Solution
+
+The flag for this level is the number of unique lines on the file on the file on the desktop. So, using our bash trained minds, we instantly think of ``` sort | uniq```, so translating to Powershell, we can use ***Get-Unique***, in bash we'd have to sort it first, due to how uniq works, but here ***Get-Unique*** works by itself. So we can just count the lines left after removing duplicates. 
+
+
+```powershell 
+PS C:\Users\century8\Desktop> (cat .\unique.txt | Get-Unique).count
+696
+```
+
+The flag is 696.
+
+
+### Century 9 Solution
+
+This level asks for us to retrieve the 161th word of the document on the desktop, which is really simple, we just have to open the file, split it using ***split(" ")*** and then get the desired item, which we can do with brackets, like this:
+
+```powershell
+PS C:\Users\century9\Desktop> (cat .\Word_File.txt).split(" ")[160]
+pierid
+```
+
+### Century 10 Solution
+
+We need to get the 10th and the 8th word of the description of the windows update service and the name of the file on the desktop, with ***Get-Service***, you get a list of all the services that machine has, and at the bottom of the list you can see *wuauserv*, the name of the windows update service. 
+
+```powershell 
+PS C:\Users\century10\documents> Get-WMIObject -Class Win32_Service -Filter "Nam
+e='wuauserv'" | Select-Object Description | Format-Table -Wrap
+
+Description
+-----------
+Enables the detection, download, and installation of updates for Windows and
+other programs. If this service is disabled, users of this computer will not
+be able to use Windows Update or its automatic updating feature, and programs
+will not be able to use the Windows Update Agent (WUA) API.
+
+
+```
+
+So you need to get the service, needing to use a filter to get it, yeah, that threw me for a loop. So then you need to use ***Select-Object***, and get the Description field, but because and it doesn't fit there you need to use ***Format-Table***.
+
+Getting the name of the desktop is trivial at this time so, the flag is windowsupdates110
+
+
+### Century 11 Solution
+
