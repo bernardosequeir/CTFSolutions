@@ -198,3 +198,62 @@ Getting the name of the desktop is trivial at this time so, the flag is windowsu
 
 ### Century 11 Solution
 
+```powershell
+PS C:\Users\century11> cd .\Downloads
+PS C:\Users\century11\Downloads> ls -Force
+
+
+    Directory: C:\Users\century11\Downloads
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+--rh--        8/30/2018   3:34 AM             30 secret_sauce
+```
+
+### Century 12 Solution
+
+The flag for this level is the description of the domain's controller computer, plus the name of the file on the desktop, so, to get the description of the domain's controller, we use ***Get-ADDomainController***.
+
+```powershell
+    PS C:\Users\century12\Desktop> Get-ADDomainController
+
+
+ComputerObjectDN           : CN=UTW,OU=Domain
+                             Controllers,DC=underthewire,DC=tech
+DefaultPartition           : DC=underthewire,DC=tech
+Domain                     : underthewire.tech
+Enabled                    : True
+Forest                     : underthewire.tech
+HostName                   : utw.underthewire.tech
+InvocationId               : 09ee1897-2210-4ac9-989d-e19b4241e9c6
+IPv4Address                : 192.99.167.156
+IPv6Address                :
+...
+```
+
+The ComputerObjectDN value gives us the domain's controller computer name (CN), so if we use ***Get-ADComputer***, we can get the information we want.
+
+
+```powershell 
+PS C:\Users\century12\Desktop> Get-ADComputer -Filter {Name -eq "UTW"} -Prop Des
+cription
+
+
+Description       : I_Authenticate
+DistinguishedName : CN=UTW,OU=Domain Controllers,DC=underthewire,DC=tech
+DNSHostName       : utw.underthewire.tech
+Enabled           : True
+Name              : UTW
+ObjectClass       : computer
+ObjectGUID        : 5ca56844-bb73-4234-ac85-eed2d0d01a2e
+SamAccountName    : UTW$
+SID               : S-1-5-21-758131494-606461608-3556270690-1000
+UserPrincipalName :
+
+```
+
+The flag is I_Authenticate_things (the name of the file on the desktop).
+
+
+### Century 13 Solution
