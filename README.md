@@ -1,20 +1,7 @@
-# CTFfiles
+#CTF Solutions
 
+## Introduction/About Me
 
-## Completed: 
+Hi, I'm Bernardo Sequeira, a sophomore studying Computer Science at ISCTE-IUL, in Portugal. In the past years I've taken a liking for CyberSecurity and would like to pursue a career on it after finishing college.
 
-Leviathan
-
-## In Progress:
-
-1. Natas 
-
-2. PicoCtf2018
-
-3. Flare-On (if still active) 
-
-4. [Century](under_the_wire/century/writeup.md)
-
-## Incomplete:
-
-1. PicoCtf2017
+In this page I'll be posting my write-ups of the Ctfs/Wargames/Whatever I play and complete(or not, i'm a real noob).
