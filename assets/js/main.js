@@ -18,7 +18,7 @@ var sectionHeight = function() {
       $(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
       $("nav ul li:first-child a").parent().addClass("active");
     });
-  
+  if(href.location.href != "https://bernardosequeir.github.io/CTFSolutions/")
     $("nav ul li").on("click", "a", function(event) {
       var position = $($(this).attr("href")).offset().top - 190;
       $("html, body").animate({scrollTop: position}, 400);
