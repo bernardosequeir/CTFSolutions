@@ -28,6 +28,6 @@ var sectionHeight = function() {
     });
   
     sectionHeight();
-  
+    console.log(window.location.href);
     $('img').on('load', sectionHeight);
   })
