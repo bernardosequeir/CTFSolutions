@@ -12,14 +12,13 @@ var sectionHeight = function() {
   }
   
   $(window).resize(sectionHeight);
-  
+  if(window.location.href != "https://bernardosequeir.github.io/CTFSolutions/"){
   $(function() {
     $("section h1, section h2, section h3").each(function(){
       $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</a></li>");
       $(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
       $("nav ul li:first-child a").parent().addClass("active");
     });
-  if(window.location.href != "https://bernardosequeir.github.io/CTFSolutions/"){
     $("nav ul li").on("click", "a", function(event) {
       var position = $($(this).attr("href")).offset().top - 190;
       $("html, body").animate({scrollTop: position}, 400);
@@ -27,7 +26,8 @@ var sectionHeight = function() {
       $(this).parent().addClass("active");
       event.preventDefault();
     });
-  }
+  
     sectionHeight();
     $('img').on('load', sectionHeight);
   })
+}
