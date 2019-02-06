@@ -10,11 +10,19 @@ body{
 }
 
 header{
-    background: #ccc;
+    background: #0a2b3a;
     font-family: "Montserrat" , monospace;           
 }
 
 header  h1{
     font-family: "Montserrat" , monospace;  
     font-weight: 600;         
+}
+
+nav ul li.tag-h1 a{
+    color: #0a2b3a;
+}
+
+nav ul a{
+    color: #1A8896;
 }
