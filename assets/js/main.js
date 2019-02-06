@@ -1,4 +1,3 @@
-console.log(window.location.href);
 var sectionHeight = function() {
     var total    = $(window).height(),
         $section = $('section').css('height','auto');
@@ -11,8 +10,8 @@ var sectionHeight = function() {
     }
   }
   
-  $(window).resize(sectionHeight);
-  if(window.location.href != "https://bernardosequeir.github.io/CTFSolutions/"){
+$(window).resize(sectionHeight);
+if(window.location.href != "https://bernardosequeir.github.io/CTFSolutions/"){
   $(function() {
     $("section h1, section h2, section h3").each(function(){
       $("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + $(this).text() + "</a></li>");
@@ -25,9 +24,7 @@ var sectionHeight = function() {
       $("nav ul li a").parent().removeClass("active");
       $(this).parent().addClass("active");
       event.preventDefault();
-    });
-  
-    
+    });  
   })
 }
 sectionHeight();

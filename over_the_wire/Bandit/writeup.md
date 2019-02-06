@@ -2,7 +2,7 @@
 
 Bandit is the easiest wargame that the folks at [OverTheWire](http://overthewire.org) have to offer, it's great for people who are getting into CyberSecurity and don't know much about Linux/unix and working in a shell.
 
-### Bandit0 Solution
+### Bandit 0 Solution
 
 First of all, and this is almost the same for every level, so I won't do it again, we have to ssh into the server, to do that we just need to do:
 ```bash 

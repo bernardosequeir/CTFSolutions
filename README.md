@@ -5,4 +5,6 @@ Hi, I'm Bernardo Sequeira, a sophomore studying Computer Science at ISCTE-IUL, i
 
 In this page I'll be posting my write-ups of the Ctfs/Wargames/Whatever I play and complete(or not, i'm a real noob).
 
-
+{% if 1 == 1 %}
+    ## test
+{% endif %}    
