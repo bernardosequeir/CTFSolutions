@@ -18,27 +18,29 @@
 
       <header>
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <p>{{page.url}}</p>
       </header>
     <div class="wrapper">
       <nav>
         <ul>
-            
-              {% for file in site.static_files %}
-                {% if file.extname == ".md" %}
-                  <a href= {{ file.path | replace: ".md",".html" | prepend: "https://bernardosequeir.github.io/CTFSolutions" }}>{{file.name}}</a>
-                {% endif %}  
-              {% endfor %}
-            
+              {% if page.url == "/" %}
+                {% for file in site.static_files %}
+                  {% if file.extname == ".md" %}
+                    {% if file.basename == "writeup_complete" %}
+                      <a href= {{ file.path | replace: ".md",".html" | prepend: "https://bernardosequeir.github.io/CTFSolutions" }}>{{file.basename}} - Complete</a>
+                    {% endif %}
+                  {% endif %} 
+                  {% if file.basename == "writeup" %}
+                      <a href= {{ file.path | replace: ".md",".html" | prepend: "https://bernardosequeir.github.io/CTFSolutions" }}>{{file.basename}} - In Progress</a>
+                    {% endif %} 
+                {% endfor %}
+              {% endif %}
         </ul>
       </nav>
       <section>
         {{ content }}
       </section>
       <footer>
-        {% if site.github.is_project_page %}
-          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
+      
       </footer>
     </div>
 
