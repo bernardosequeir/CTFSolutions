@@ -21,7 +21,11 @@
       </header>
     <div class="wrapper">
       <nav>
-        <ul></ul>
+        <ul>
+            {% for file in site.static_files %}
+              <a href={{file.path}}>{{file.name}}</a>
+            {% endfor %}   
+        </ul>
       </nav>
       <section>
         {{ content }}
