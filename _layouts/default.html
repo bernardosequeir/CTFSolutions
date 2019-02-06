@@ -18,13 +18,18 @@
 
       <header>
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <p>{{page.url}}</p>
       </header>
     <div class="wrapper">
       <nav>
         <ul>
-            {% for file in site.static_files %}
-              <a href={{file.path}}>{{file.name}}</a>
-            {% endfor %}   
+            {% comment %} {% if page.url == "/" %} {% endcomment %}
+              {% for file in site.static_files %}
+                {% if file.extname == ".md" %}
+                  <a href={{file.basename}}+".html">{{file.name}}</a>
+                {% endif %}  
+              {% endfor %}
+            {% comment %} {% endif %}    {% endcomment %}
         </ul>
       </nav>
       <section>
