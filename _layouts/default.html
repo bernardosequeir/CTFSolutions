@@ -23,13 +23,13 @@
     <div class="wrapper">
       <nav>
         <ul>
-            {% comment %} {% if page.url == "/" %} {% endcomment %}
+             {%- comment -%} {% if page.url == "/" %}  {%- endcomment -%}
               {% for file in site.static_files %}
                 {% if file.extname == ".md" %}
                   <a href={{file.basename}}+".html">{{file.name}}</a>
                 {% endif %}  
               {% endfor %}
-            {% comment %} {% endif %}    {% endcomment %}
+            {%- comment -%} {% endif %}    {%- endcomment -%}
         </ul>
       </nav>
       <section>
