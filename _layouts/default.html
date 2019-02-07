@@ -27,11 +27,11 @@
               {% if page.url == "/" %}
                 {% for file in site.static_files %}
                   {% if file.extname == ".md" %}
-                    {% if file.basename == "writeup_complete" %}
+                    {% if file.basename contains "writeup_complete" %}
                       <a href= {{ file.path | replace: ".md",".html" | prepend: "https://bernardosequeir.github.io/CTFSolutions" }}>{{file.basename | replace :"_writeup.md",""}} - Complete</a>
                     {% endif %}
                   {% endif %} 
-                  {% if file.basename == "writeup" %}
+                  {% if file.basename contains "writeup" %}
                       <a href= {{ file.path | replace: ".md",".html" | prepend: "https://bernardosequeir.github.io/CTFSolutions" }}>{{file.basename}} - In Progress</a>
                     {% endif %} 
                 {% endfor %}
