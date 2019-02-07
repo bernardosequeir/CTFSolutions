@@ -24,10 +24,10 @@
     <div class="wrapper">
       <nav>
         <ul>
-          <li class="tag-h1">
-            <a>Writeups Available:</a>
-          </li>
               {% if page.url == "/" %}
+                <li class="tag-h1">
+                  <a>Writeups Available:</a>
+                </li>
                 {% for file in site.static_files %}
                   {% if file.extname == ".md" %}
                     {% if file.basename contains "writeup_complete" %}
