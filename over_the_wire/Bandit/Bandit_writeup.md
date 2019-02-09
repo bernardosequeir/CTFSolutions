@@ -4,7 +4,7 @@ Bandit is the easiest wargame that the folks at [OverTheWire](http://overthewire
 
 This write-up is currently being written as I'm playing this wargame again and now trying to document everything, so if something isn't here just wait a couple of days and then it might be here! 😁
 
-### Bandit 0 -> 1 Solution
+### Bandit 0 -> 1 
 
 First of all, and this is almost the same for every level, so I won't do it again, we have to ssh into the server, to do that we just need to do:
 ```bash 
@@ -26,7 +26,7 @@ bandit0@bandit:~$ cat readme
 boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 ```
 
-### Bandit 1 -> 2 Solution
+### Bandit 1 -> 2 
 
 Before starting this explanation, I have to say two things:
 
@@ -51,7 +51,7 @@ bandit1@bandit:~$ cat ./-
 CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 ```
 
-### Bandit 2 -> 3
+### Bandit 2 -> 3 
 
 Similar to the level before, this time you have to cat out a file with spaces in its file name, but you can beat this one in an even easier way, if you are not aware of it, bash supports [tab-completion](https://en.wikipedia.org/wiki/Command-line_completion), and its one of the most useful things it has, if you write just the "s" of "spaces" and hit Tab, the "s" will expand to the full filename, properly escaped and ready to use, so you avoid learning how to handle files with spaces in their names (even though you kinda do learn it, it's just adding a \ at the end of each word, so that it escapes the space "character")  
 
@@ -62,7 +62,7 @@ bandit2@bandit:~$ cat spaces\ in\ this\ filename
 UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 ```
 
-### Bandit 3 -> 4
+### Bandit 3 -> 4 
 
 This level introduces the concept of [hidden files](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory), but don't fret, it's not hard to deal with them, if you run ***ls -a*** they become visible, but I'd argue that it's even  better to use ***ls-la***, as it shows all files and directories (hidden or not) and displayed neatly in a table with loads of information (don't worry, over time, you begin to know what it all means and start using without event thinking).
 
