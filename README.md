@@ -5,6 +5,6 @@ Hi, I'm Bernardo Sequeira, a sophomore studying Computer Science at ISCTE-IUL, i
 
 In this page I'll be posting my write-ups of the Ctfs/Wargames/Whatever I play and complete(or not, i'm a real noob).
 
-If you have suggestions for challenges for me to tackle, have doubts about something i wrote, or just anything at all, you can shoot me an e-mail to Bernardo_Sequeira at iscte-iul.pt
+If you have suggestions for challenges for me to tackle, have doubts about something i wrote, or just anything at all, you can shoot me an e-mail to Bernardo_Sequeira at iscte-iul.pt. You can also check my raw files [here](https://github.com/bernardosequeir/CTFSolutions)
 
 Hope you can learn something from what I wrote!
