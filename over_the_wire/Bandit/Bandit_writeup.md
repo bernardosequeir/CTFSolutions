@@ -179,7 +179,7 @@ Also, you might have been confused as why your terminal looks messed up after ca
 
 ### Bandit 6 -> 7
 
-On the description for this level it is hinted that the file can be anywhere on the server so we need to use ***/*** on our ***find*** command so that it searches starting on the base folder of the server, in this level we also use the ***-user*** and ***-group*** flags on the ***find*** command.  
+On the description for this level it is hinted that the file can be anywhere on the server so we need to use ***/*** on our ***find*** command so that it searches starting on the base folder of the server, in this level we also need to use the ***-user*** and ***-group*** flags on the ***find*** command.  
 
 ```bash
 bandit6@bandit:~$ find / -user "bandit7" -group "bandit6" -size 33c 2>/dev/null
