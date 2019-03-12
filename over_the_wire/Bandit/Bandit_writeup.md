@@ -188,4 +188,15 @@ bandit6@bandit:~$ cat /var/lib/dpkg/info/bandit7.password
 HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
 ```
 
-If you try to run the ***find*** without the ***2>/dev/null*** I put on the end of the command you will have some problems trying to find the file that is returned on the command when it's there, that's because the snippet at the end redirects the errors (stderr) to ***dev/null*** aka nowhere, and just leaves the normal output for us (stdout). Keep those names in mind, you will eventually need to learn more about them.
+If you try to run the ***find*** without the ***2>/dev/null*** you'll have some problems trying to find the file that is returned on the command when it's there, that's because the snippet at the end redirects the errors (stderr) to ***dev/null*** aka nowhere, and just leaves the normal output for us (stdout). Keep those names in mind, you will eventually need to learn more about them.
+
+### Bandit 7 -> 8
+
+This level serves as in introduction to the ***grep*** command, which is useful to find a certain word or pattern inside a file. Using it makes this level take seconds to complete, which is ridiculous if you think of the time it would take to check the 98567(!!!) lines of this file by hand.
+```bash
+bandit7@bandit:~$ wc -l data.txt
+98567 data.txt
+bandit7@bandit:~$ cat data.txt | grep millionth
+millionth       cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+```
+
