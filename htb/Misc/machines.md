@@ -1,7 +1,7 @@
 ### Easy Machines
-* [Lame - 10.10.10.3](https://www.hackthebox.eu/home/machines/profile/1)
-* [Legacy - 10.10.10.4](https://www.hackthebox.eu/home/machines/profile/2)
-* [Devel - 10.10.10.5](https://www.hackthebox.eu/home/machines/profile/3)
+* ~~[Lame - 10.10.10.3](https://www.hackthebox.eu/home/machines/profile/1)~~
+* ~~[Legacy - 10.10.10.4](https://www.hackthebox.eu/home/machines/profile/2)~~
+* ~~[Devel - 10.10.10.5](https://www.hackthebox.eu/home/machines/profile/3)~~
 * [Beep - 10.10.10.7](https://www.hackthebox.eu/home/machines/profile/5)
 * [Optimum - 10.10.10.8](https://www.hackthebox.eu/home/machines/profile/6)
 * [Arctic - 10.10.10.11](https://www.hackthebox.eu/home/machines/profile/9)
