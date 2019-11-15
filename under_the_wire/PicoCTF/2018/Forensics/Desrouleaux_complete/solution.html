@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Answers</h1>
+    <h2>Most common ip:</h2>
+</body>
+
+<script>
+    const data = {
+    "tickets": [
+        {
+            "ticket_id": 0,
+            "timestamp": "2015/10/28 12:16:04",
+            "file_hash": "5204293b5ed96599",
+            "src_ip": "240.1.243.213",
+            "dst_ip": "182.32.4.151"
+        },
+        {
+            "ticket_id": 1,
+            "timestamp": "2015/11/18 14:07:44",
+            "file_hash": "a75b956686a241cb",
+            "src_ip": "23.30.222.124",
+            "dst_ip": "207.114.144.209"
+        },
+        {
+            "ticket_id": 2,
+            "timestamp": "2015/10/25 19:10:10",
+            "file_hash": "a75b956686a241cb",
+            "src_ip": "23.30.222.124",
+            "dst_ip": "0.52.41.54"
+        },
+        {
+            "ticket_id": 3,
+            "timestamp": "2016/04/23 11:38:17",
+            "file_hash": "387aa93a23d29bed",
+            "src_ip": "146.18.31.26",
+            "dst_ip": "182.32.4.151"
+        },
+        {
+            "ticket_id": 4,
+            "timestamp": "2015/08/31 03:19:48",
+            "file_hash": "5204293b5ed96599",    
+            "src_ip": "13.139.34.55",
+            "dst_ip": "0.52.41.54"
+        },
+        {
+            "ticket_id": 5,
+            "timestamp": "2016/09/01 20:30:46",
+            "file_hash": "543ed3e015542192",
+            "src_ip": "146.18.31.26",
+            "dst_ip": "185.54.79.9"
+        },
+        {
+            "ticket_id": 6,
+            "timestamp": "2016/12/03 15:57:57",
+            "file_hash": "a75b956686a241cb",
+            "src_ip": "240.1.243.213",
+            "dst_ip": "207.114.144.209"
+        },
+        {
+            "ticket_id": 7,
+            "timestamp": "2017/08/25 19:19:57",
+            "file_hash": "3668437bfbd3b7dd",
+            "src_ip": "7.0.235.220",
+            "dst_ip": "11.100.29.172"
+        },
+        {
+            "ticket_id": 8,
+            "timestamp": "2016/02/10 06:38:33",
+            "file_hash": "543ed3e015542192",
+            "src_ip": "23.30.222.124",
+            "dst_ip": "45.219.223.196"
+        },
+        {
+            "ticket_id": 9,
+            "timestamp": "2017/06/22 21:11:59",
+            "file_hash": "e2f5452f29f0c811",
+            "src_ip": "13.139.34.55",
+            "dst_ip": "88.141.19.130"
+        }
+    ]
+};
+
+function showMostFrequent(){
+    data.tickets.forEach(ticket => {
+        let nTimes = 0;
+        let Ip = ticket.src_ip
+        data.tickets.forEach(ticket=>{
+            if (Ip === ticket.src_ip)
+                nTimes++;
+            if(Ip === ticket.dst_ip)
+                nTimes++;
+        });
+        console.log(Ip + " appears " + nTimes + " times.")
+    });
+    data.tickets.forEach(ticket => {
+        let nTimes = 0;
+        let Ip = ticket.dst_ip;
+        data.tickets.forEach(ticket=>{
+            if (Ip === ticket.src_ip)
+                nTimes++;
+            if(Ip === ticket.dst_ip)
+                nTimes++;
+        });
+        console.log(Ip + " appears " + nTimes + " times.")
+    });
+}
+</script>
+</html>
