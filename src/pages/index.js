@@ -1,12 +1,14 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Header from '../components/header';
+import Layout from '../components/layout';
 
 export default () => (
-  <div style={{ color: `purple` }}>
-    <Link to="/contact/">Contact</Link>
-    <Header headerText="Hello Gatsby!" />
-    <p>What a world.</p>
-    <img src="https://source.unsplash.com/random/400x200" alt="" />
-  </div>
+  <Layout>
+    <h1>RITA TU ÉS LINDA PA PORRA</h1>
+    <div>
+      <img
+        src="https://pbs.twimg.com/media/ECE3uvtUIAAHZZV?format=jpg&name=large"
+        alt="Group of pandas eating bamboo"
+      />
+    </div>
+  </Layout>
 );

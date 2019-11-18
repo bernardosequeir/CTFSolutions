@@ -11,7 +11,7 @@ def find_nth_prime(nth):
 
 
 def is_prime(num):
-    nums = range(1, int(num ** 0.5)+1)
+    nums = range(2, int(num ** 0.5)+1)
     for i in nums:
         if(num % i == 0):
             return False
