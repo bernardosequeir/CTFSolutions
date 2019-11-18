@@ -14,12 +14,14 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.22",
+    "css-loader": "^3.2.0",
     "gatsby": "^2.17.11",
     "gatsby-plugin-emotion": "^4.1.15",
     "gatsby-plugin-typography": "^2.3.17",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-typography": "^0.16.19",
+    "style-loader": "^1.0.0",
     "typography": "^0.16.19",
     "typography-theme-kirkham": "^0.16.19"
   },
