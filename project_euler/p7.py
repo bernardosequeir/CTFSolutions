@@ -1,12 +1,12 @@
 def find_nth_prime(nth):
-    num_primes = 1
-    prime = 1
-    n = 2
+    num_primes = 2
+    prime = 2
+    n = 3
     while(num_primes <= nth):
         if(is_prime(n)):
             prime = n
             num_primes += 1
-        n += 1
+        n += 2
     return prime
 
 
