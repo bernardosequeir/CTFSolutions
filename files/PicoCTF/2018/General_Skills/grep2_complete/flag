@@ -1,0 +1,4 @@
+just go to the dir and grep every file : 
+grep pico */*
+
+flag: picoCTF{grep_r_and_you_will_find_556620f7}

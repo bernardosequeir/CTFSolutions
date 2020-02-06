@@ -20,10 +20,12 @@ export default ({ children }) => {
   return (
     <div
       css={css`
+        background: #2d132c;
         margin: 0 auto;
-        max-width: 700px;
+        max-width: 50%;
         padding: ${rhythm(2)};
         padding-top: ${rhythm(1.5)};
+        back
       `}
     >
       <Link to="/">
