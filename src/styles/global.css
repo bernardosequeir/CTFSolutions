@@ -1,3 +1,11 @@
 a:visited {
   color: #ee4540;
 }
+
+.dark-mode {
+  filter: invert(100%);
+}
+
+.dark-mode img {
+  filter: invert(100%);
+}

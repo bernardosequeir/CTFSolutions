@@ -14,7 +14,7 @@ export default ({ data }) => (
           border-bottom: 1px solid;
         `}
       >
-        Amazing Pandas Eating Things
+        Blog Posts
       </h1>
       {data.allMarkdownRemark.edges
         .filter(({ node }) => node.fields.slug.includes('complete'))

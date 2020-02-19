@@ -20,7 +20,6 @@ export default ({ children }) => {
   return (
     <div
       css={css`
-        background: #2d132c;
         margin: 0 auto;
         max-width: 50%;
         padding: ${rhythm(2)};
@@ -48,6 +47,14 @@ export default ({ children }) => {
         About
       </Link>
       {children}
+      <div className="dark-mode-switch">
+        <input
+          id="dark-mode"
+          type="checkbox"
+          onClick="document.documentElement.classList.toggle('dark-mode')"
+        ></input>
+        <label htmlFor="dark-mode">Dark Mode</label>
+      </div>
     </div>
   );
 };
