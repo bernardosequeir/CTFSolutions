@@ -1,11 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 a:visited {
   color: #ee4540;
 }
 
-.dark-mode {
-  filter: invert(100%);
+body {
+  background-color: #121212;
 }
 
-.dark-mode img {
-  filter: invert(100%);
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  opacity: 87%;
 }

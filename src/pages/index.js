@@ -2,7 +2,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
 import { Link, graphql } from 'gatsby';
-import { rhythm } from '../utils/typography';
 import Layout from '../components/layout';
 
 export default ({ data }) => (
@@ -29,14 +28,11 @@ export default ({ data }) => (
             >
               <h3
                 css={css`
-                  margin-bottom: ${rhythm(1 / 4)};
+                  margin-bottom: 1rem};
                 `}
               >
                 {node.frontmatter.title}{' '}
                 <span
-                  css={css`
-                    color: #555;
-                  `}
                 >
                   — {node.frontmatter.date}
                 </span>
