@@ -1,12 +1,5 @@
 /*imports*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,
-  100,
-  500,
-  300italic,
-  500italic,
-  700italic,
-  900,
-  300");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700i,900&display=swap");
 
 /* typography mixins and sizes copied from https://codepen.io/zavoloklom/details/IkaFL */
 
@@ -289,6 +282,6 @@ h3,
 h4,
 p,
 a {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #ffffff;
 }
