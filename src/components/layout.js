@@ -27,6 +27,7 @@ export default ({ children }) => {
     >
       <Link to="/">
         <h3
+          className="title"
           css={css`
             display: inline-block;
             font-style: normal;

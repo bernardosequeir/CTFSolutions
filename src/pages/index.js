@@ -8,6 +8,7 @@ export default ({ data }) => (
   <Layout>
     <div>
       <h1
+        className="headline"
         css={css`
           display: inline-block;
           border-bottom: 1px solid;
@@ -18,7 +19,7 @@ export default ({ data }) => (
       {data.allMarkdownRemark.edges
         .filter(({ node }) => node.fields.slug.includes('complete'))
         .map(({ node }) => (
-          <div key={node.id}>
+          <div key={node.id} className="posts">
             <Link
               to={node.fields.slug}
               css={css`
@@ -31,11 +32,7 @@ export default ({ data }) => (
                   margin-bottom: 1rem};
                 `}
               >
-                {node.frontmatter.title}{' '}
-                <span
-                >
-                  — {node.frontmatter.date}
-                </span>
+                {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
               </h3>
               <p>{node.excerpt}</p>
             </Link>

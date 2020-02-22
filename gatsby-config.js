@@ -3,6 +3,7 @@ module.exports = {
     title: `Bernardo Sequeira`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-emotion`,
     `gatsby-transformer-remark`,
 
