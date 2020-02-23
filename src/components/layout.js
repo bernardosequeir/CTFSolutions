@@ -16,15 +16,7 @@ export default ({ children }) => {
     `
   );
   return (
-    <div
-      className="main"
-      css={css`
-        margin: 0 auto;
-        max-width: 50%;
-
-        back
-      `}
-    >
+    <div className="main">
       <Link to="/">
         <h3
           className="display-1"

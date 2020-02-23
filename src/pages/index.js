@@ -35,7 +35,7 @@ export default ({ data }) => (
               >
                 {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
               </h3>
-              <p className="caption">{node.excerpt}</p>
+              <p className="label">{node.excerpt}</p>
             </Link>
           </div>
         ))}
