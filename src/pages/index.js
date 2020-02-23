@@ -28,13 +28,14 @@ export default ({ data }) => (
               `}
             >
               <h3
+                className="subhead-1"
                 css={css`
                   margin-bottom: 1rem};
                 `}
               >
                 {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
               </h3>
-              <p>{node.excerpt}</p>
+              <p className="caption">{node.excerpt}</p>
             </Link>
           </div>
         ))}

@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,500i,700i,900&display=swap");
 
 /* typography mixins and sizes copied from https://codepen.io/zavoloklom/details/IkaFL */
-
+html {
+  font-size: 62.5%;
+}
 html.text-large {
   font-size: 75%;
 }

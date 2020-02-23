@@ -27,16 +27,16 @@ export default ({ children }) => {
     >
       <Link to="/">
         <h3
-          className="title"
+          className="display-1"
           css={css`
             display: inline-block;
-            font-style: normal;
           `}
         >
           {data.site.siteMetadata.title}
         </h3>
       </Link>
       <Link
+        className="button"
         to="/about/"
         css={css`
           float: right;
