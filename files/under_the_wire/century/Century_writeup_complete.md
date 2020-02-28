@@ -2,7 +2,7 @@
 title: "Under The Wire Century Wargame Write-Up"
 ---
 
-**[Century](http://underthewire.tech/century/century.htm)** is the easiest wargame offered by the folks over at [UnderTheWire](http://underthewire.tech/), who I think are the same people behind the more popular [OverTheWire](http://overthewire.org/wargames/), while OtW offers challenges more geared to Linux/\*nix users, UtW focuses on the Windows side of things. In this introductory one we learn how to do some very basic stuff in powershell, just to get our feet wet in this side of the pond. In terms of difficulty, its most direct comparison would be Bandit (from OtW), but as it is much shorter, it's even easier than that. The hardest challenge here is trying to learn something from the Powershell docs imo.
+**[Century](http://underthewire.tech/century/century.htm)** is the easiest wargame offered by the folks over at [UnderTheWire](http://underthewire.tech/). In this introductory game we learn how to do some very basic stuff in powershell, just to get our feet wet in this side of the pond. In terms of difficulty, its most direct comparison would be Bandit (from OtW), but as it is much shorter, it's even easier than that. The hardest challenge here is trying to learn something from the Powershell docs imo.
 
 So, I hope you you enjoy the Write-Up and if you have any doubts don't be afraid to shoot me an e-mail.
 
