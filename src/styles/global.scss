@@ -277,6 +277,8 @@ pre,
   transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   white-space: pre-wrap !important;
   word-wrap: break-word !important;
+  word-break: break-all !important;
+
 }
 pre:hover,
 .posts:hover {
