@@ -267,7 +267,9 @@ body {
   width: 60%;
   min-height: 90%;
 }
-code{
+code
+{
+  white-space: pre-wrap;
   word-wrap: break-word;
 }
 pre,
