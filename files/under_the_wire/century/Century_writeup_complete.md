@@ -181,8 +181,7 @@ pierid
 We need to get the 10th and the 8th word of the description of the windows update service and the name of the file on the desktop, with **_Get-Service_**, you get a list of all the services that machine has, and at the bottom of the list you can see _wuauserv_, the name of the windows update service.
 
 ```powershell
-PS C:\Users\century10\documents> Get-WMIObject -Class Win32_Service -Filter "Nam
-e='wuauserv'" | Select-Object Description | Format-Table -Wrap
+PS C:\Users\century10\documents> Get-WMIObject -Class Win32_Service -Filter "Name='wuauserv'" | Select-Object Description | Format-Table -Wrap
 
 Description
 -----------
@@ -238,8 +237,7 @@ IPv4Address                : 192.99.167.156
 The ComputerObjectDN value gives us the domain's controller computer name (CN), so if we use **_Get-ADComputer_**, we can get the information we want.
 
 ```powershell
-PS C:\Users\century12\Desktop> Get-ADComputer -Filter {Name -eq "UTW"} -Prop Des
-cription
+PS C:\Users\century12\Desktop> Get-ADComputer -Filter {Name -eq "UTW"} -Prop Description
 
 
 Description       : I_Authenticate
