@@ -4,6 +4,7 @@
 /* typography mixins and sizes copied from https://codepen.io/zavoloklom/details/IkaFL */
 html {
   font-size: 80%;
+  width: 100%;
 }
 html.text-large {
   font-size: 75%;
@@ -209,7 +210,7 @@ $letter-spacing-button: 0.1;
 // Font-size for device
 @media only screen and (max-width: 960px) {
   .main {
-    width: 90%;
+    width: 100%;
   }
   .subhead-2 {
     @include font-size($font-size-dv-subhead);
@@ -304,6 +305,6 @@ code{
   white-space: pre-wrap !important;
   word-wrap: break-word !important;
   word-break: normal !important;
-  overflow-wrap: hidden !important;
+  overflow-wrap: break-word !important;
   overflow: hidden !important;
 }
