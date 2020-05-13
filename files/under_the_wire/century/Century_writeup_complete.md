@@ -285,8 +285,7 @@ Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
 -a----        8/30/2018  11:24 PM         202900 countpolos
 
-PS C:\Users\century14\Desktop> (cat .\countpolos | Select-String -Pattern "polo"
- -AllMatches).Matches.Count
+PS C:\Users\century14\Desktop> (cat .\countpolos | Select-String -Pattern "polo" -AllMatches).Matches.Count
 158
 
 ```
