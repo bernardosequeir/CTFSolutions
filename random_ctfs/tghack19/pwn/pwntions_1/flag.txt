@@ -1,1 +1,0 @@
-TG19{remember that C always terminates on null bytes^_^}
