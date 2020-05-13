@@ -201,10 +201,15 @@ $letter-spacing-button: 0.1;
   text-transform: uppercase;
 }
 
+@media only screen and (min-width: 960px) {
+  .main {
+    width: 60%;
+  }
+}
 // Font-size for device
 @media only screen and (max-width: 960px) {
   .main {
-    width: 80%;
+    width: 90%;
   }
   .subhead-2 {
     @include font-size($font-size-dv-subhead);
@@ -264,7 +269,6 @@ body {
   border-radius: 10px;
   padding: 25px;
   margin: 0 auto;
-  width: 60%;
   min-height: 90%;
 }
 
@@ -275,10 +279,6 @@ pre,
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
     0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
   transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-  white-space: pre-wrap !important;
-  word-wrap: break-word !important;
-  word-break: break-all !important;
-  overflow-wrap: break-word !important;
 }
 pre:hover,
 .posts:hover {
@@ -298,4 +298,11 @@ p,
 a {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
+}
+
+code{
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  word-break: normal !important;
+  overflow-wrap: hidden !important;
 }
