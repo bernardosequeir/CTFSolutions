@@ -278,7 +278,7 @@ pre,
   white-space: pre-wrap !important;
   word-wrap: break-word !important;
   word-break: break-all !important;
-  overflow-wrap: break-word;
+  overflow-wrap: break-word !important;
 }
 pre:hover,
 .posts:hover {
