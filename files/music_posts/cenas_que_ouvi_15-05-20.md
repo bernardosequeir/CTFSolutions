@@ -9,3 +9,6 @@ Se não gostar de uma coisa nem vou falar porque honestamente tenho mais que faz
 
 ### LPs
 
+### EPs
+
+[![Ep cover](https://f4.bcbits.com/img/a2671046402_16.jpg)](https://semanticarecords.bandcamp.com/album/be-careful-and-nobody-dies-semantica-112)
