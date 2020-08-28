@@ -34,6 +34,12 @@ Se não gostar de uma coisa nem vou falar porque honestamente tenho mais que faz
 
 [![Lp cover](https://f4.bcbits.com/img/a2642826297_16.jpg)](https://girlpoool.bandcamp.com/album/before-the-world-was-big)
 
+### Minor Science - Second Language 
+
+#### Whities 
+
+[![Lp cover](https://f4.bcbits.com/img/a4059916052_16.jpg)](https://whities.bandcamp.com/album/second-language)
+
 ### EPs
 
 ### Stanislav Tolkachev - Be Careful And Nobody Dies
