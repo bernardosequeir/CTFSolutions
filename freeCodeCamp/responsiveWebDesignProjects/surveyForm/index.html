@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form Mockup</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1 id="title">Total Mockup Survey</h1>
+      <p id="description">A short description for the form and why you'd be filling it out.</p>
+    </header>
+    <form id="survey-form">
+      <div id="personal-information">
+        <h3>Your Information:</h3>
+        <div class="form-group">
+          <label id="name-label" for="name">Name: </label>
+          <input required type="text" id="name" placeholder="Your name here">
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email: </label>
+          <input required type="email" id="email" placeholder="Your e-mail">
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="age">Your Age: </label>
+          <input required type="number" value="age" id="age" min="13" max="120" placeholder="99">
+        </div>
+      </div>
+
+      <div id="radio-boxes">
+        <h3>Numbers from 1 to 5: </h3>
+        <div class="form-group">
+          <div class="box-input">
+            <input type="radio" name="choice1" id="1">
+            <label for="1">1 (一) </label>
+          </div>
+          <div class="box-input">
+            <input type="radio" name="choice1" id="2">
+            <label for="2">2 (二) </label>
+          </div>
+          <div class="box-input">
+            <input type="radio" name="choice1" id="3">
+            <label for="3">3 (三) </label>
+          </div>
+          <div class="box-input">
+            <input type="radio" name="choice1" id="4">
+            <label for="4">4 (四) </label>
+          </div>
+          <div class="box-input">
+            <input type="radio" name="choice1" id="5">
+            <label for="5">5 (五) </label>
+          </div>
+
+        </div>
+
+      </div>
+      <div id="checkboxes">
+        <h3>Numbers from 6 to 10: </h3>
+        <div class="form-group">
+          <div class="box-input">
+            <input type="checkbox" name="choice2" id="6">
+            <label for="6">6 (六) </label>
+          </div>
+          <div class="box-input">
+            <input type="checkbox" name="choice2" id="7">
+            <label for="7">7 (七) </label>
+          </div>
+          <div class="box-input">
+            <input type="checkbox" name="choice2" id="8">
+            <label for="8">8 (八) </label>
+          </div>
+          <div class="box-input">
+            <input type="checkbox" name="choice2" id="9">
+            <label for="9">9 (九) </label>
+          </div>
+          <div class="box-input">
+            <input type="checkbox" name="choice2" id="10">
+            <label for="10">10 (十) </label>
+          </div>
+        </div>
+      </div>
+      <div id="comment-boxes">
+        <h3>
+          Leave a comment!
+        </h3>
+        <div class="form-group">
+          <div id="dropdown-div">
+            <select name="dropdown" id="dropdown">
+              <option disabled selected value>Choose one</option>
+              <option value="1">A</option>
+              <option value="2">B</option>
+              <option value="3">C</option>
+              <option value="4">D</option>
+            </select>
+          </div>
+          <div id="comment-box">
+            <textarea>Like, Share and Subscribe!</textarea>
+          </div>
+          <button type="submit" id="submit">Submit your choices</button>
+        </div>
+
+
+      </div>
+
+    </form>
+  </main>
+</body>
+
+</html>
