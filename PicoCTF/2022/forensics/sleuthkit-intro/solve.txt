@@ -1,0 +1,1 @@
+just gunzip the img and run mmls on it, solves itself

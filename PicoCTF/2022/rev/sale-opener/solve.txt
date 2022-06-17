@@ -1,0 +1,1 @@
+just base64 decode the encoded flag hardcoded in the openSafe method
